@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <!--Importar la fuente de los íconos de Google-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Importar la hojas de estilos de materialize css-->
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/customColors.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/index.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <title>Contenedores y Sistema de Rejilla</title>
+  </head>
+  <body>
+    <div class="row">
+      <div class="s12 col red darken-1 black-text encabezado">
+        <div class="row">
+          <div class="s12 m8 l5 col contenedor-logo-buscar">
+            <img src="img/browser.png" alt="logo" class="logo float: left">
+            <div class="input-field buscar-campo">
+              <input type="text" placeholder="Buscar...">
+              <i class="material-icons prefix">search</i>
+            </div>
+          </div>
+          <div class="l4 offset-l3 col contenedor-botones hide-on-small-only">
+            <a class="btn-floating btn-small waves-effect waves-light blue-grey"><i class="material-icons">drafts</i></a>
+            <a class="btn-floating btn-small waves-effect waves-light blue-grey"><i class="material-icons">archive</i></a>
+            <a class="btn-floating btn-small waves-effect waves-light blue-grey"><i class="material-icons">help</i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s2 m2 l2 grey lighten-4 black-text columna-grupos push-s10">
+        <div class="collection">
+          <a class="collection-item avatar">
+            <img src="img/jsLogo.png" alt="" class="circle">
+            <span class="title hide-on-med-and-down">JavaScript</span>
+            <p class="hide-on-med-and-down">132 Miembros</p>
+          </a>
+          <a class="collection-item avatar">
+            <img src="img/cssLogo.png" alt="" class="circle">
+            <span class="title hide-on-med-and-down">CSS</span>
+            <p class="hide-on-med-and-down">101 Miembros</p>
+          </a>
+          <a class="collection-item avatar">
+            <img src="img/nodeLogo.png" alt="" class="circle">
+            <span class="title hide-on-med-and-down">NodeJS</span>
+            <p class="hide-on-med-and-down">93 Miembros</p>
+          </a>
+          <a class="collection-item avatar">
+            <img src="img/reactLogo.png" alt="" class="circle">
+            <span class="title hide-on-med-and-down">ReactJS</span>
+            <p class="hide-on-med-and-down">64 Miembros</p>
+          </a>
+          <a class="collection-item avatar">
+            <img src="img/angularLogo.png" alt="" class="circle">
+            <span class="title hide-on-med-and-down">AngularJS</span>
+            <p class="hide-on-med-and-down">34 Miembros</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="col s10 m7 l7 white black-text columna-principal z-depth-1 pull-s2">
+        <div class="row">
+          <div class="col s12 m12 l8 white black-text columna-publicaciones">
+            <div class="contenedor-write-publicacion card amber lighten-4">
+              <div class="card-content">
+                <span>Escribe una nueva publicación</span>
+                <form>
+                  <textarea id="publicacion-texto"></textarea>
+                  <a href="#" class="waves-effect btn-floating blue-grey white-text"><i class="large material-icons">code</i></a>
+                  <a href="#" class="waves-effect btn-floating blue-grey white-text"><i class="small material-icons">create</i></a>
+                  <a href="#" class="waves-effect btn-floating blue-grey white-text"><i class="small material-icons">mic</i></a>
+                  <button class="btn-flat waves-effect waves-light blue-grey white-text right hide-on-small-only" type="submit" name="action"><i class="material-icons right">send</i></button>
+                  <button class="btn-floating waves-effect waves-light blue-grey white-text right hide-on-med-and-up" type="submit" name="action"><i class="material-icons right">send</i></button>
+                </form>
+              </div>
+            </div>
+
+            <div class="contenedor-publicacion card amber lighten-4">
+              <div class="card-content blue-grey white-text">
+                <span class="card-title activator">Carlos32: <i class="material-icons right">more_vert</i></span>
+                <p>
+                  Les quiero compartir mi código usando Flexbox en CSS3.
+                </p>
+              </div>
+              <div class="card-image">
+                <span class="card-title">Uso de Flexbox</span>
+                <video src="media/vid1.mov" autoplay controls class="responsive-video media-element"></video>
+              </div>
+
+              <div class="card-reveal grey white-text">
+                <span class="card-title">Uso de Flexbox<i class="material-icons right">close</i></span>
+                <p>Este código se encarga de poner unos bloques de colores en un contenedor padre usando Flexbox.</p>
+              </div>
+            </div>
+
+            <div class="contenedor-publicacion card amber lighten-4">
+              <div class="card-content blue-grey white-text">
+                <span class="card-title activator">Juan.JS:<i class="material-icons right">more_vert</i></span>
+                <p>
+                  Tengo una duda sobre Materialize CSS. ¡Ayuda!
+                </p>
+                <blockquote>
+                  En esta ocasión estoy aprendiendo a implementar texto adaptativo, imágenes y video.
+                  Me ha resultado muy sencillo implementar cada uno de estos elementos puesto que el Framework
+                  lo hace muy sencillo. Sin embargo me surge una pregunta, tengo problemas
+                  al usar un video desde la web, ¿Alguien puede ayudarme?
+                </blockquote>
+              </div>
+              <div class="card-reveal grey white-text">
+                <span class="card-title">Duda sobre Materialize CSS<i class="material-icons right">close</i></span>
+                <p class="flow-text">
+                  Hola, quiero compartirles mi experiencia como programador web.
+                  He aprendido mucho de diseño front-end mediante diversos frameworks
+                  CSS y la verdad me siento muy a gusto desarrollando con Materialize CSS.
+                </p>
+
+              </div>
+
+            </div>
+          </div>
+          <div class="l3 offset-l1 col white columna-noticias hide-on-med-and-down">
+            <div class="contenedor-noticias amber lighten-4">
+              <h5 class="center-align">Últimas noticias</h5>
+              <p class="truncate">
+                -Se ha publicado la última versión de Java 8.
+              </p>
+              <img src="img/img2.jpg" class="responsive-img"/>
+
+              <p class="truncate">
+                -Nueva versión de JavaScript
+              </p>
+              <img src="img/img3.jpg" class="responsive-img"/>
+
+              <p class="truncate">
+                -Se aproxima la conferencia de desarrollo web.
+              </p>
+              <img src="img/img4.jpg" class="responsive-img"/>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="m3 l3 col white columna-chat hide-on-small-only">
+        <div class="row">
+          <div class="s12 col bloque-feed">
+            <ul class="collection with-header avatar">
+              <li class="collection-header blue-grey white-text"><h5>Actividades Recientes</h5></li>
+              <li class="collection-item avatar blue-grey white-text">
+                <i class="material-icons circle blue">replay</i>
+                <span class="title">Maria_Dev</span>
+                <p>
+                respondió tu pregunta
+                </p>
+              </li>
+              <li class="collection-item avatar blue-grey white-text">
+                <i class="material-icons circle green">person_add</i>
+                <span class="title">CodigosOnline</span>
+                <p>
+                quiere agregarte como amigo
+                </p>
+              </li>
+              <li class="collection-item avatar blue-grey white-text">
+                <i class="material-icons circle yellow darken-3">help</i>
+                <span class="title">WebRodrigo</span>
+                <p>
+                te hizo una pregunta
+                </p>
+              </li>
+              <li class="collection-item avatar blue-grey white-text">
+                <i class="material-icons circle purple">people</i>
+                <span class="title">Grupo JavaScript</span>
+                <p>
+                hizo una publicación
+                </p>
+              </li>
+
+            </ul>
+          </div>
+          <div class="s12 col bloque-chat">
+            <ul class="collection with-header">
+              <li class="collection-header grey lighten-1"><h5>Chat</h5></li>
+              <li class="collection-item grey lighten-1">
+                <div class="chip">
+                  <img src="img/hombre.png">
+                  WebRodrigo
+                </div>
+              </li>
+              <li class="collection-item grey lighten-1">
+                <div class="chip">
+                  <img src="img/hombre.png">
+                  Carlos32
+                </div>
+              </li>
+              <li class="collection-item grey lighten-1">
+                <div class="chip">
+                  <img src="img/mujer.png">
+                  MariaDev
+                </div>
+              </li>
+              <li class="collection-item grey lighten-1">
+                <div class="chip">
+                  <img src="img/hombre.png">
+                  Juan.JS
+                </div>
+              </li>
+              <li class="collection-item grey lighten-1">
+                <div class="chip">
+                  <img src="img/mujer.png">
+                  Rita_G
+                </div>
+              </li>
+              <li class="collection-item grey lighten-1">
+                <div class="chip">
+                  <img src="img/mujer.png">
+                  Jazmin122
+                </div>
+              </li>
+              <li class="collection-item grey lighten-1">
+                <div class="chip">
+                  <img src="img/hombre.png">
+                  CodigosOnline
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+      <div class="fixed-action-btn hide-on-small-only" style="bottom: 45px; right: 90vw;">
+        <a class="btn-floating btn-large red">
+          <i class="large material-icons red darken-4">build</i>
+        </a>
+        <ul>
+          <li><a class="btn-floating red"><i class="material-icons">notifications_active</i></a></li>
+          <li><a class="btn-floating yellow darken-1"><i class="material-icons">share</i></a></li>
+          <li><a class="btn-floating green"><i class="material-icons">lock_open</i></a></li>
+          <li><a class="btn-floating blue"><i class="material-icons">volume_off</i></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+  </body>
+  </html>
